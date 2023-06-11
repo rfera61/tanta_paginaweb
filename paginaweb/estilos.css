@@ -1,0 +1,763 @@
+/* AQUI ABAJO TIPOGRAFIA */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* AQUI ABAJO SECCION "HOME O INDEX" */
+
+/* Variables */
+:root{
+  --color-primario: #b51783;
+  --color-secundario: #fe8402;
+}
+.HOME{
+background-image: linear-gradient(to bottom, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(./img/1.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-size: cover;
+}
+body {font-family: 'Poppins'; margin:0}
+*{
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo_centro{
+  max-width: 500px;
+  padding: 15px;
+  margin-top: 80px;
+  align-self: center;
+  text-align: center;
+}
+
+.logo_centro img{
+  height: 100%;
+  width: 100%;
+}
+
+/* Header */
+.header{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+  background: var(--color-primario) ;
+  position: fixed;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo{
+  height: 35%;
+}
+
+.navbar ul{
+  display: flex;
+  list-style-type: none;
+  gap: 25px;
+
+
+  border-radius: 0 0 50px 50px;
+}
+
+.navbar{
+  display: flex;
+}
+
+.navbar i{
+  font-size: 36px;
+  display: none;
+}
+
+#toggle-menu{
+  display: none;
+}
+
+.navbar-link{
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  font-size: large;
+  font-family: 'Hammersmith One';
+}
+
+.bars-menu{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  position: relative;
+}
+
+.bars-menu span{
+  height: 2px;
+  width: 30px;
+  background: white;
+  display: none;
+
+  transition: transform 0.3s;
+}
+
+#toggle-menu:checked ~ .bars-menu span:nth-child(1) {
+  position: absolute ;
+  top: 0;
+  transform: rotate(135deg);
+}
+
+#toggle-menu:checked ~ .bars-menu span:nth-child(2) {
+  opacity: 0;
+}
+
+#toggle-menu:checked ~ .bars-menu span:nth-child(3){
+  position: absolute;
+  top: 0;
+  transform: rotate(225deg);
+}
+
+.navbar-link:hover{
+  text-shadow: #000 0px 0px 25px;
+  font-weight: 600;
+  letter-spacing: 0.03rem;
+  transition-duration: 0.3s;
+}
+
+.spacetop{
+  height: 80px;
+}
+.home-main{
+  height: 75vh;
+}
+
+.caja-slogan{
+  width: 75%;
+}
+#slogan{
+    color: white;
+    font-family: 'Hammersmith One';
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+/*     margin-left: 10%;
+    margin-right: 10%; */
+  
+    
+}
+/* Footer */
+.footer-home{
+  margin-top: 50px;
+}
+footer {
+  background-color: var(--color-primario);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  transform: translateY(-3px);
+}
+/* Fin del Footer */
+
+
+/* AQUI ABAJO SECCION "NOSOTROS" */
+
+.NOSOTROS{
+  margin: 0;
+  padding: 0;
+  background-color: #f3ede1;
+}
+
+.izquierda{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #FE8302;
+  height: 120vh;
+  width: 50%;
+}
+
+.derecha{
+  
+  background: url(img/causa.png);
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  height: 120vh;
+}
+
+#conozcas{
+  color: white;
+  font-size: 60px;
+  width: 50%;
+  font-family: 'Hammersmith One';
+
+  margin: 10px;
+}
+
+#presentacion{
+  color: white;
+  font-size: 20px;
+  line-height: 40px;
+  width: 50%;
+  font-family: 'Poppins';
+
+  margin-bottom: 20px;
+}
+
+#pantalla-dividida{
+  display: flex;
+}
+
+
+/* AQUI ABAJO SECCION "CONTACTO" */
+
+#contacto_pantalla_dividida{
+  display: flex;
+}
+
+#contacto_izquierdo{
+  background: #FE8302;
+  height: 100vh;
+  width: 50%;
+}
+
+#contacto_derecho{
+  width: 50%;
+  height: 100vh;
+  justify-content: center;
+}
+
+#ponete_en_contacto{
+  color: white;
+  font-size: 60px;
+  width: 50%;
+  margin-bottom: 40px;
+  margin: auto;
+  margin-left: 80px;
+  font-family: 'Hammersmith One';
+  margin-top: 30px;
+}
+
+#datos_contacto{
+  color: white;
+  font-size: 20px;
+  line-height: 50px;
+  width: 80%;
+  margin: auto;
+  margin-left: 80px;
+  font-family: 'Poppins';
+}
+
+.instagram{
+  color: white;
+  border: 3px solid white;
+  padding: 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 80px;
+  font-family: 'Poppins';
+}
+
+#mapa{
+  width: 100%;
+  height: 100vh;
+}
+
+
+/** AQUI ABAJO SECCION "MENU" **/
+
+.wrap{
+  max-width: 1300px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.column-2.carta{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.plato-carta{
+  display: flex;
+  align-items: center;
+  border: 1px solid #FE8302;
+  border-radius: 6px;
+}
+
+.img-plato-carta{
+  display: flex;
+  flex-basis: 25%;
+  justify-content: center;
+}
+
+.img-plato-carta img{
+  max-width: 100px;
+  max-height: 75px;
+}
+
+.title-plato-carta{
+  border: 1px solid #FE8302;
+  border-bottom: none;
+  border-top: none;
+  flex-basis: 60%;
+  padding: 0 1rem;
+}
+
+.precio-plato-carta{
+  display: flex;
+  flex-basis: 15%;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.seccion_menu{
+  font-family:'Hammersmith One' ;
+  color: #b51783;
+}
+
+.nombre_plato_menu{
+  font-family:'Montserrat';
+  color: #FE8302;
+}
+
+.descripcion_plato{
+  font-family: 'Poppins';
+  color: black;
+}
+
+
+/** AQUI ABAJO SECCION "RESERVAS" **/
+
+.hero-page{
+  width: 100%;
+  background:linear-gradient(to bottom, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(img/G3.jpg);
+  background-size: cover;
+  height: 200px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap-hero-page{
+  color: #f2f2f2;
+  padding: 1rem;
+}
+
+.section{
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+
+.wrap-two-column{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4rem;
+}
+
+.formulario{
+  display: flex;
+  flex-flow: column;
+}
+
+.formulario input, .formulario textarea{
+  margin: .5rem 0;
+  padding: .5rem .2rem;
+}
+/* #b51783 */
+.formulario button{
+  width: fit-content;
+  border: #b51783 solid 1px;
+  border-radius: 10px;
+  padding: 0 10px 0 10px;
+  background-color: #b5178300;
+  color: #b51783;
+  font-size: 1.1rem;
+  font-family: 'Poppins';
+}
+
+.formulario button:hover{
+  background-color: #b51783;
+  color: white;
+}
+
+.titulo_reservas{
+  font-family: 'Hammersmith One';
+  color: white;
+  font-size: xx-large;
+}
+
+.subtitulos_reservas{
+  font-family:'Montserrat';
+  color: #FE8302;
+}
+
+.parrafos_reserva{
+  font-family: 'Poppins';
+  font-size: larger;
+}
+
+.campos_requeridos{
+  font-family: 'Poppins';
+}
+
+
+/** AQUI ABAJO SECCION "MUNDO" **/
+
+.wrap{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.column-4{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+.tarjeta-rest{
+  background-repeat: no-repeat;
+  height: 400px;
+  border-radius: 6px;
+  padding: 1rem .5rem;
+  display: flex;
+  align-items: end;
+}
+.tarjeta-rest-Santiago{
+  background: url(img/Santiago.png) 
+  center; background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  border-radius: 6px;
+  padding: 1rem .5rem;
+  display: flex;
+  align-items: end;
+}
+
+.tarjeta-rest-Lima{
+  background: url(img/Lima.png) 
+  center; 
+  background-size: cover;
+  height: 400px;
+  border-radius: 6px;
+  padding: 1rem .5rem;
+  display: flex;
+  align-items: end;
+}
+
+.tarjeta-rest-Chicago{
+  background: url(img/Chicago.png) 
+  center; 
+  background-size: cover;
+  height: 400px;
+  border-radius: 6px;
+  padding: 1rem .5rem;
+  display: flex;
+  align-items: end;
+}
+
+.tarjeta-rest-Buenos_Aires{
+  background: url(img/Buenos_Aires.png) 
+  center; 
+  background-size: cover;
+  height: 400px;
+  border-radius: 6px;
+  padding: 1rem .5rem;
+  display: flex;
+  align-items: end;
+}
+
+.wrap-text_tarjeta-rest{
+  color: #fff;
+  padding: .5rem;
+  border-radius: 6px;
+  background: linear-gradient(to top, rgb(0 0 0 / .5), rgb(0 0 0 / .5));
+}
+.wrap-text_tarjeta-rest p{
+  color: #f2f2f2;
+}
+
+.cta-wrap_tarjeta-rest{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cta_tarjeta-rest:hover{
+  background: #feb804;
+}
+
+.cta_tarjeta-rest:active{
+  background: #fe8302;
+}
+
+.precio_tarjeta-rest span{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cta_tarjeta-rest{
+  background-color:#b51783;
+  padding: .25rem 1rem;
+  border: #b51783 solid 1px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.cta_tarjeta-rest a{
+  color: #fff;
+  font-weight: bold;
+}
+
+.titulo_ciudad{
+  font-family: 'Hammersmith One';
+}
+
+.texto_ciudades{
+  font-family: 'Poppins';
+}
+
+.texto_CONÓCELO{
+  font-family: 'Poppins';
+  text-decoration: none;
+}
+.mundo-footer{
+  margin-top: 50vh;
+  margin-bottom: 0;
+}
+
+
+/** AQUI ABAJO SECCION "@media" **/
+
+@media (max-width:1024px){
+  .column-4{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* main */
+  .home-main{
+    height: calc(100vh - 80px - 20vh);
+
+    gap: 10px;
+  }
+  #slogan{
+    font-size: 2.5rem;
+  }
+  
+  .footer-home{
+    margin-top: 130px;
+  }
+/* Nosotros */
+#pantalla-dividida{
+  flex-direction: column;
+}
+
+.izquierda{
+  width: 100%;
+  height: auto;
+}
+#conozcas{
+  font-size: 4rem;
+}
+#presentacion{
+  font-size: x-large;
+}
+.derecha{
+  width: 100%;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+  /* Reservas */
+  .section{
+    display: flex;
+    flex-direction: column;
+  }
+  .parrafos_reserva{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+ /* Contacto */
+ #contacto_pantalla_dividida{
+  display: flex;
+  flex-direction: column;
+}
+#contacto_izquierdo{
+  width: 100%;
+  height: auto;
+}
+#contacto_izquierdo h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 60px 0 0 0;
+  text-align: center;
+}
+#contacto_derecho{
+  width: 100%;
+  height: auto;
+}
+    /* Menú */
+    .wrap-two-column{
+      grid-template-columns: 1fr;
+    }
+    /* Mundo */
+    .column-4{
+      grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media (max-width: 480px) {
+
+  /* Header */
+  .navbar .navbar-list{
+      background: var(--color-secundario);
+      width: 100%;
+      height: 57vh;
+      position: absolute;
+      top: 64px;
+      left: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 15px;
+
+      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+      
+      transform: translateX(200%);
+      transition: all 0.4 ease;
+  }
+
+      .navbar i {
+      display: block;
+  }
+  .bars-menu span{
+      display: flex;
+  }
+
+  #toggle-menu:checked ~ .navbar-list {
+      /* display: flex; */
+      transform: translateX(0);
+      transition: all 0.4 ease;
+  }
+
+  /* main */
+  .home-main{
+    height: calc(100vh - 80px - 20vh);
+
+    gap: 10px;
+  }
+  #slogan{
+    font-size: 1.5rem;
+  }
+  
+  .footer-home{
+    margin-top: 110px;
+  }
+
+  /* Nosotros */
+
+  #pantalla-dividida{
+    flex-direction: column;
+  }
+
+  .izquierda{
+    width: 100%;
+    height: auto;
+  }
+  #conozcas{
+    font-size: 2.5rem;
+  }
+  .derecha{
+    width: 100%;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70vh;
+  }
+
+
+  /* Menú */
+  .column-2.carta{
+    grid-template-columns: repeat(1,1fr);
+  }
+  /* Reservas */
+  .section{
+    display: flex;
+    flex-direction: column;
+  }
+  .parrafos_reserva{
+    padding-right: 0px;
+  }
+  /* Contacto */
+  #contacto_izquierdo{
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .informacion-contactos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #datos_contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    margin: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+  /* Menú */
+  .wrap-two-column{
+    grid-template-columns: 1fr;
+  }
+  /* Mundo */
+ 
+  .column-4{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+
